@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #F7F8FA;
+    --surface: #FFFFFF;
+    --primary-text: #17202A;
+    --secondary-text: #667085;
+    --border-color: #E4E7EC;
+    
+    --primary-accent: #173B63;
+    --primary-accent-hover: #122F50;
+    --secondary-accent: #287C7A;
+    --ai-accent: #5B5BD6;
+    --ai-accent-bg: #F0F0FF;
+    
+    --success: #16855B;
+    --success-bg: #EAF8F2;
+    --warning: #C98216;
+    --warning-bg: #FEF7EC;
+    --error: #C53B3B;
+    --error-bg: #FDF2F2;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--primary-text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Utilities */
+.bg-app-background { background-color: #F7F8FA; }
+.bg-app-surface { background-color: #FFFFFF; }
+.bg-brand-primary { background-color: #173B63; }
+.bg-brand-secondary { background-color: #287C7A; }
+.bg-ai-accent { background-color: #5B5BD6; }
+.bg-ai-soft { background-color: #F0F0FF; }
+
+.text-app-primary { color: #17202A; }
+.text-app-secondary { color: #667085; }
+.text-brand-primary { color: #173B63; }
+.text-brand-secondary { color: #287C7A; }
+.text-ai-accent { color: #5B5BD6; }
+
+.border-app { border-color: #E4E7EC; }
+.border-ai { border-color: #C7C7FF; }
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0D5DD;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #98A2B3;
+}
